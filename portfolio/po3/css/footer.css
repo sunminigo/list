@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+#footermenu{background:url(../images/footer_bg.gif) repeat-x 0 bottom;
+					height:33px;
+					position:relative;}
+#footermenu ul{overflow:hidden;
+						margin-left:10px;
+						}
+#footermenu ul li{float:left;
+							padding-top:12px;
+							margin-left:13px;
+							background:url(../images/footermenu_line.gif) no-repeat 3px 12px;
+							padding-left:20px;}
+#footermenu ul li:first-child{margin-left:0;
+											padding-left:0;}
+.footerlogo{position:absolute;
+				top:40px; right:0;}
+.address img{padding:10px;}
+
+/*에디트플러스 설정 글꼴 Myriad Pro*/
+

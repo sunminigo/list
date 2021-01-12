@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>우당탕탕삼국지</title>
+
+<!-- viewport s -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+<!-- css s -->
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/media.css"/>
+<link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+<link rel="stylesheet" href="css/jquery.bxslider.css"/>
+
+<!-- favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+<link rel="icon" type="image/ico" href="images/favicon.ico" />
+
+<!-- js s -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<!--[if lt IE 10]>
+<link rel="stylesheet" type="text/css" href="css/ie9.css"/>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+<script src="js/html5shiv-printshiv.js"></script>
+<script src="js/es5-shim.min.js"></script>
+<![endif]-->
+
+<!-- video -->
+<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet" />
+<script src="http://vjs.zencdn.net/c/video.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+		
+	//scroll header fixed
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('.scroll_menu a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('.scroll_menu a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-115
+        }, 500, 'swing');
+    });
+
+	function onScroll(event){
+	var scrollPos = $(document).scrollTop()+115;
+	//var headHight = $(".visual_top").height() + 30;
+	//var scrollPos = $(document).scrollTop() + headHight;
+		$('.scroll_menu ul li a').each(function () {
+			var currLink = $(this);
+			var refElement = $(currLink.attr("href"));
+			if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+				$('.scroll_menu ul li a').removeClass("active");
+				currLink.addClass("active");
+			}
+			else{
+				currLink.removeClass("active");
+			}
+		});
+	}
+
+	//fixed menu
+	var nav = $(".visual_top");
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 500) {
+			nav.addClass("f-nav");
+		} else {
+			nav.removeClass("f-nav");
+		}
+	});
+
+	// faq
+	$(".answer").hide();
+	$(".question").click(function(){
+		if($(this).next().css('display')=='none'){
+			$(".answer").slideUp("slow");
+		}
+		$(this).next().slideDown("slow");
+		
+        $('.question').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+	});
+
+	// scroll_header_m
+    var $header = $(".header"),
+        $clone = $header.before($header.clone().addClass("clone"));
+       
+		$(window).on("scroll", function() {
+            var fromTop = $(window).scrollTop();
+            $("body").toggleClass("down", (fromTop > 500));
+        });
+		
+});
+</script>
+
+<script>
+	//side menu
+	function openNav(a) {
+		document.getElementById("sidenav").style.display = "block";
+		$('body').addClass('stop').bind('touchmove', function(e){e.preventDefault()})
+	}
+	function closeNav(a) {
+		document.getElementById("sidenav").style.display = "none";
+		$('body').removeClass('stop').unbind('touchmove')
+	}
+</script>
+
+<script src="js/jquery.bxslider.js"></script>
+<script>
+$(document).ready(function(){
+	var slider_03 =	$('.bxslider_03').bxSlider({
+			auto: false,controls:true,pager:true,moveSlides:3,slideWidth: 0,slideMargin:0,autoHover:true,slideWidth: 1000,
+		});
+		// 클릭시 멈춤 현상 해결 //
+		$(document).on('click','.bx-next, .bx-prev',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		});
+		$(document).on('mouseover','.bx-pager, #bx-pager1',function() {
+		slider.stopAuto();
+		slider.startAuto();
+		slider_01.stopAuto();
+		slider_01.startAuto();
+		slider_02.stopAuto();
+		slider_02.startAuto();
+		});	
+});
+</script>
+
+</head>
+<body>
+	<!-- ▽▽ GreenVolt GNB ▽▽
+	<script src="http://www.greenvolt.co.kr/gvgnb.vjs?cid=twentyfourjsko" charset="utf-8"></script>
+	<script type="text/javascript">
+		GVGNB.init();
+		GVGNB.show();
+	</script> -->
+	<!-- △△ GreenVolt GNB △△-->
+	<header class="m_header_wrap">
+		<div class="m_header">
+			<div class="logo"><img src="images/logo.png" alt="greenvolt"/></div>
+			<div class="user_wrap">
+				<div class="logout_cont"><!-- 로그인 전 -->
+					<a href="#" class="login"></a>
+				</div>
+				<div class="login_cont"><!-- 로그인 후 -->
+					<a href="#" class="refill"></a>
+					<a href="#" class="mypage"></a>
+					<a href="#" class="logout"></a>
+				</div>
+			</div>
+		</div><!-- m_header e -->
+		<div class="m_scroll_header">
+			<div class="header">
+				<div class="logo">우당탕탕 삼국지</div>
+				<span class="home"><a href="#"><img src="images/m/home.png" alt=""/></a></span>
+				<div class="btn_open" onclick="openNav()">
+					<span class="line"></span><span class="line"></span><span class="line"></span>
+				</div>
+			</div>
+			<div id="sidenav" class="side_menu_wrap m_sidebar">
+				<div class="side_menu">
+					<div class="btn_close" onclick="closeNav()">
+						<span class="line"></span><span class="line"></span><span class="line"></span>
+					</div>
+					<div class="m_user_wrap">
+						<div class="logout_cont">
+						<button class="btn_login">그린볼트 로그인</button>
+						<ul class="find_user">
+							<li><a href="#">회원가입</a></li>
+							<li><a href="#">아이디찾기</a></li>
+							<li><a href="#">비번찾기</a></li>
+						</ul>
+					</div><!-- logout_cont e -->
+					<div class="login_cont">
+						<div class="user_id"><span>시냅스게임즈</span> 님</div>
+						<div class="my_cont">
+							<p class="my_cash"><span>1,200,000</span> 원</p>
+							<p class="my_point"><span>120,000</span>&nbsp; P</p>
+						</div>
+						<button class="btn_refill">캐시<br/>충전</button>
+					</div><!-- login_cont e -->
+				</div><!-- m_user_wrap e -->
+					<ul class="menu">
+						<li><a href="#part01" onclick="closeNav()">홈으로</a></li>
+						<li><a href="#part02" onclick="closeNav()">게임소개</a></li>
+						<li><a href="#part03" onclick="closeNav()">특징</a></li>
+						<li><a href="#part05" onclick="closeNav()">스크린샷</a></li>
+						<li><a href="#part06" onclick="closeNav()">동영상</a></li>
+						<li><a href="#part07" onclick="closeNav()">FAQ</a></li>
+					</ul>
+					<div class="copyright">(c) SYNAPS GAMES Corp. All rights reserved.</div>
+				</div><!-- side_menu e -->
+			</div><!-- side_menu_wrap e -->
+		</div><!-- m_scroll_header e -->
+	</header><!-- header_wrap e -->
+
+	<div id="wrapper" class="content">
+		<section class="container_wrap">
+			<div class="container">
+				<section id="part01" class="visual_wrap">
+					<div class="visual_cont basic_wid">
+						<div class="visual_top">
+							<div class="scroll_menu">
+								<a href="#part01" class="game_logo"></a>
+								<ul class="menu">
+									<li><a href="#part02" class="scroll">게임소개</a></li>
+									<li><a href="#part03" class="scroll">특징</a></li>
+									<li><a href="#part05" class="scroll">스크린샷</a></li>
+									<li><a href="#part06" class="scroll">동영상</a></li>
+									<li><a href="#part07" class="scroll">FAQ</a></li>
+								</ul>
+							</div>
+						</div><!-- visual_top e -->
+						<div class="visual_txt"><img src="images/visual_txt.png" alt=""/></div>
+						<div class="btn_start"><button title="게임시작"><img src="images/part01_start.png" alt=""/></button></div>
+						<div class="btn_arrow"><a href="#part02" class="scroll"><img src="images/part01_arrow.png" alt="arrow" title="아래로이동"/></a></div>
+
+					</div><!-- visual_cont e -->
+				</section><!-- part01 e -->
+				<section id="part02" class="intro_wrap basic_wid">
+					<div class="thumb"></div>
+					<div class="txt"><b>삼국지 영웅들의 화려한 부활!</b><br/>다운로드 및 플레이스토어, 앱스토어에서 설치할 필요없이<br class="wbr sbr"/>언제 어디서나 PC,모바일폰 구분없이 플레이 가능한<br class="wbr sbr"/> 난투삼국은 전력 및 자동으로 진행하는 H5 웹게임입니다.<br class="wbr sbr"/>성지를 점령하는 방식으로 자원을 획득하여<br class="sbr"/> 영웅레벨업, 환생 등<br class="wbr"/>다양한 시스템으로 실력을 상승시켜<br class="sbr"/> 다른 유저들과 대전해 보세요.<br class="wbr sbr"/>보스전 및 시련으로 희귀 재료를 획득할 수 있으며,<br class="sbr"/>성지 강화 가능.<br class="wbr"/>게임 시작과 함께 대량 보석 획득<br class="sbr"/> 가능한 시스템을 지금 바로<br class="wbr"/>경험해 보세요.</div>
+				</section><!-- part02 e -->
+				<section id="part03" class="feature_wrap">
+					<div class="feature_cont min_wid swiper-container">
+						<div class="feature swiper-wrapper">
+							<div class="swiper-slide">
+							<dl class="">
+								<dt class="thumb"></dt>
+								<dd class="title">리얼한 타격감!!</dd>
+								<dd>게임특징에 대한 설명글을 출력합니다.<br/>게임특징에 대한 설명글을 출력합니다.</dd>
+							</dl>
+							</div>
+							<div class="swiper-slide">
+							<dl class="">
+								<dt class="thumb"></dt>
+								<dd class="title">리얼한 타격감!!</dd>
+								<dd>게임특징에 대한 설명글을 출력합니다.<br/>게임특징에 대한 설명글을 출력합니다.</dd>
+							</dl>
+							</div>
+							<div class="swiper-slide">
+							<dl class="">
+								<dt class="thumb"></dt>
+								<dd class="title">리얼한 타격감!!</dd>
+								<dd>게임특징에 대한 설명글을 출력합니다.<br/>게임특징에 대한 설명글을 출력합니다.</dd>
+							</dl>
+							</div>
+							<div class="swiper-slide">
+							<dl class="">
+								<dt class="thumb"></dt>
+								<dd class="title">리얼한 타격감!!</dd>
+								<dd>게임특징에 대한 설명글을 출력합니다.<br/>게임특징에 대한 설명글을 출력합니다.</dd>
+							</dl>
+							</div>
+							<div class="swiper-slide">
+							<dl>
+								<dt class="thumb"></dt>
+								<dd class="title">리얼한 타격감!!</dd>
+								<dd>게임특징에 대한 설명글을 출력합니다.<br/>게임특징에 대한 설명글을 출력합니다.</dd>
+							</dl>
+							</div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div><!-- min_wid e -->
+				</section><!-- part03 e -->
+				<section id="part04" class="bn_intro_wrap">
+					<div class="txt_cont min_wid">
+						<div class="bn_txt">
+							<span>다운로드나 스토어 이동 없이<br class="sbr xbr"/> 클릭하는 순간<br/>바로 실행되는 신개념 게임!</span><br/>PC에서나 모바일폰에서나 어디서나 즐기는<br class="sbr xbr"/> 아기자기한 삼국지 영웅들의 다채로운 액션과 대전.
+						</div>
+					</div>
+				</section><!-- part04 e -->
+				<section id="part05" class="screen_shot_wrap">
+					<div class="screen_shot_cont" id="s_banner_wrap"><!-- swiper-container -->
+						<div class="screen_shot bxslider_03"><!-- swiper-wrapper -->
+							<div class="banner_a1 swiper-slide"><img src="images/screenshot/screenshot_01.jpg" alt="screenshot"/></div><!-- swiper-slide -->
+							<div class="banner_a2 swiper-slide"><img src="images/screenshot/screenshot_02.jpg" alt="screenshot"/></div>
+							<div class="banner_a3 swiper-slide"><img src="images/screenshot/screenshot_03.jpg" alt="screenshot"/></div>
+							<div class="banner_a4 swiper-slide"><img src="images/screenshot/screenshot_04.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_05.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_06.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_07.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_08.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_09.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_10.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_11.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_12.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_13.jpg" alt="screenshot"/></div>
+							<div class="banner_a5 swiper-slide"><img src="images/screenshot/screenshot_14.jpg" alt="screenshot"/></div>
+						</div>
+						<!-- Add Pagination
+						<div class="swiper-pagination"></div> -->
+						<!-- Add Arrows
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div> -->
+					</div>
+				</section><!-- part05 e -->
+				<section id="part06" class="video_wrap">
+					<div class="min_wid">
+						<div class="video">
+							<video poster="images/video_thumbnail.jpg" width="640" height="356" controls="controls">
+								<source src=".mp4" type="video/mp4" />
+								<source src=".webm" type="video/webm" />
+								<source src=".ogv" type="video/ogg" />
+							</video>
+						</div>
+						<div class="video_txt">귀여운 무장들의<br/>박진감 넘치는<br class="wbr"/>액션 대전!</div>
+					</div>
+				</section><!-- part06 e -->
+				<section id="part07" class="faq_wrap">
+					<div class="faq_cont min_wid">
+						<div class="faq">
+							<div class="title">FAQ</div>
+							<div class="cont"><!-- 6개씩 컷 -->
+								<dl>
+									<dt class="question"><span>우당탕탕삼국지는 어떤 장르의 게임인가요?</span></dt>
+									<dd class="answer"><span>액션장르의 웹게임으로 PC, 모바일 구분없이 플레이가 가능합니다.</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>우당탕탕삼국지는 어디서 만든 게임인가요?</span></dt>
+									<dd class="answer"><span>시냅스게임즈에서 만들고,시냅스게임즈에서채널링 서비스를 하고 있는 게임입니다.</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>삼국지 영웅들이 등장하나요?</span></dt>
+									<dd class="answer"><span>삼국 위,촉,오나라시대에 등장했던 호걸들을 직접 플레이 하실 수 있습니다.지금 바로 경험해 보세요!</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>회원가입은 어떻게 하나요?</span></dt>
+									<dd class="answer"><span>홈페이지 우측 상단의 회원가입 버튼을 통해 가입이 가능합니다.정확한 정보를 기입해 주세요!</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>아이디/비밀번호가 기억나지 않습니다.</span></dt>
+									<dd class="answer"><span>홈페이지 우측 상단의 로그인 버튼을 통해 아이디/비밀번호찾기를 클릭해 주세요!</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>비밀번호는 어떻게 변경하나요?</span></dt>
+									<dd class="answer"><span>홈페이지 로그인 이후에 마이페이지>비밀번호 변경을 통해 변경이 가능합니다.</span></dd>
+								</dl>
+							</div>
+							<div class="cont cont02">
+								<dl>
+									<dt class="question"><span>설치없이 게임을 할 수 있나요?</span></dt>
+									<dd class="answer"><span>네!마켓접속이나 클라이언트 다운로드 등 별도의 설치 없이 언제 어디서든 쉽게 플레이가 가능합니다.</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>스마트폰으로도 게임 플레이가 가능한가요?</span></dt>
+									<dd class="answer"><span>네!안드로이드,ios구분없이 스마트폰으로도 플레이가 가능합니다.</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>유료 아이템은 어떻게 구매 하나요?</span></dt>
+									<dd class="answer"><span>홈페이지에서 원하시는 금액만큼 캐쉬를 충전한 후에 게임에서 아이템을 구매할 수 있습니다.</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>버그로 인해 게임을 진행할 수 없어요.</span></dt>
+									<dd class="answer"><span>홈페이지내에 고객센터를 통해 자세한 버그 내용을 보내주세요.최대한 신속히 처리해 드리겠습니다.</span></dd>
+								</dl>
+								<dl>
+									<dt class="question"><span>게임 내용과 관련된 문의는 어디에서 확인할 수 있을까요?</span></dt>
+									<dd class="answer"><span>홈페이지내에 고객센터를 통해 궁금하신 내용을 보내주세요.최대한 신속히 답변해 드리겠습니다.</span></dd>
+								</dl>
+							</div>
+							<div class="paging_wrap">
+								<a href="#" class="on">1</a>
+								<a href="#">2</a>
+								<a href="#">3</a>
+								<a href="#">4</a>
+							</div>
+						</div>
+					</div>
+				</section><!-- part07 e -->
+			</div>
+		</section><!-- container_wrap e -->
+		<section class="footer_wrap">
+			<h2 class="hide">footer</h2>
+			<div class="ft_top_wrap">
+				<ul class="ft_top">
+					<li class="hidden_m"><a href="http://www.synapsgames.com/" target="_blank">회사소개</a></li>
+					<li class="m_first"><a href="https://www.greenvolt.co.kr/popup/content/terms-of-service" target="_blank">이용약관</a></li>
+					<li><a href="https://www.greenvolt.co.kr/popup/content/privacy-policy" target="_blank" style="color:#050505;">개인정보처리방침</a></li>
+					<li><a href="https://www.greenvolt.co.kr/popup/content/parental-control-policy" target="_blank">청소년 보호정책</a></li>
+					<!-- <li class="hidden_m"><a href="#" target="_blank">고객지원</a></li> -->
+				</ul>
+			</div>
+			<div class="m_footer">
+				<div class="sbtn_wrap">
+					<a href="https://www.greenvolt.co.kr//login"><button class="sbtn">로그인</button></a>
+					<a href="https://vid.greenvolt.co.kr/responsive/register"><button class="sbtn">회원가입</button></a>
+				</div>
+				<ul class="ft_menu">
+					<li><a href="#dialog/content/terms-of-service" onclick="contentPopup('service'); return false;">이용약관</a></li>
+					<li><a href="#dialog/content/privacy-policy" onclick="contentPopup('privacy'); return false;">개인정보처리방침</a></li>
+					<li><a href="javascript:support();">고객센터</a></li>
+				</ul>
+			</div>
+			<div class="ft_under">
+				<h3 class="ft_logo">
+					<a href="http://synapsgames.co.kr/" target="_blank" class="synaps"></a>
+					<a href="http://www.hangame.com/" target="_blank" class="nhn"></a>
+				</h3>
+				<div class="address_cont">
+					<address>
+						<em>상호 <span class="hide_m">:</span> (주)시냅스게임즈</em><em>사업자등록번호 <span class="hide_m">:</span> 339-87-00333</em><br class="mbr sbr xbr"/><em>통신판매업신고 <span class="hide_m">:</span> 제2016-서울강남-00607</em><em>대표 <span class="hide_m">:</span> 박준범</em><br class="wbr mbr sbr xbr"/> <em><span class="hide_m">주소 : </span>서울시 강남구 도곡로3길 27 동일빌딩 7층</em><br class="mbr sbr xbr"/><em>고객센터 <span class="hide_m">:</span> 02-555-2948</em><em>개인정보보호책임자 <span class="hide_m">:</span> 박건희</em>
+					</address>
+					<cite>(c) SYNAPS GAMES Corp. All rights reserved.</cite>
+					<address>
+						<a href="#" class="hnh_m"></a>
+						<em>NHN엔터테인먼트는 동신판매중개자로서 <br class="mbr sbr xbr"/>게임의 거래에 대한 의무와 책임은 각 제공자에게 있으며<br/>이와 관련하여 발생하는 문제에 대해서 <br class="mbr sbr xbr"/>당사는 법적 책임을 부담하지 않습니다.
+					</address>
+					<p class="rating"></p>
+				</div>
+			</div>
+		</section><!-- footer_wrap e -->
+	</div>
+
+
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script language="javascript" type="text/javascript">
+    var appendNumber = 4;
+    var prependNumber = 1;
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        spaceBetween: 50,
+        centeredSlides: false,
+        paginationClickable: true,
+        breakpoints: {
+            1024: {
+				slidesPerView: 3,
+				spaceBetween: 50,
+            },
+            768: {
+				slidesPerView: 3,
+				spaceBetween: 50,
+            },
+            640: {
+				centeredSlides: true,
+				paginationClickable: true,
+
+                slidesPerView: 1,
+                spaceBetween: 0
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0
+            }
+		}
+     });
+</script>
+
+</body>
+</html>

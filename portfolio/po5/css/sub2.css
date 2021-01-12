@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(footer.css);
+
+#up > img{width:100%;}
+
+#under{width:100%;
+			overflow:hidden;
+			position:relative;
+			margin-top:10px;}
+
+#part1{float:left;
+			width:20%;}
+
+.menu{}
+.menu ul{}
+.menu ul li,.left_b ul li{margin:5px 0;}
+
+
+#part2{float:left;
+			width:67%;
+			margin:0 20px;}
+.top{float:right;}
+.load li{float:left;
+				padding:0 10px;
+				background:url(../images/location_bar.gif) no-repeat 0px 1px;}
+.load li:first-child{background:none;}
+
+.icon{}
+.icon li{float:left;
+			margin-left:5px;}
+strong{font-weight:bold;
+					display:none;}
+strong ol li,.green{color:#5BA033;}
+strong span{color:#F97602;}
+
+
+
+#quick{width:*;
+			text-align:center;
+			background:url(../images/qm_bg.gif) repeat-y;
+			position:absolute;
+			right:0px;
+			top:0px;}
+#quick ul li{padding:5px 0 0 0;
+					}
+.line{background:url(../images/qm_line.gif) no-repeat 5px 0;
+margin:5px 0;}
+
+
+
+
+
+
+/*780(브라우저 가로폭)*/
+@media screen and (max-width:780px){
+	#header,#footer,#contents{width:100%;
+												overflow:hidden;}
+	#headerwrap{background:url(../images/top_bg.gif) no-repeat 0 0/68px 7px, url(../images/top_line.gif) repeat-x 68px 0, url(../images/menu_bg.gif) no-repeat -500px 70px/2880px 5px;}
+
+	#header {position:relative;}
+	#header h1{width:100%;}
+
+	#gnb,#quick,label{display:none;}
+
+	#part1 img{width:150px;}
+	.menu ul li,.left_b ul li{margin:5px 0;}
+
+
+
+	.footermenu a{display:none;}
+	#footer form{display:none;}
+
+	.callcenter{text-align:center;
+						width:100%;
+						clear:both;}
+
+	.address{clear:both;
+					padding:15px 10px;
+					text-align:center;
+						width:100%;}
+
+	.warning{margin-left:10px;
+					text-align:center;
+						width:100%;}
+
+}
+
+
+
+	/*360(브라우저 가로폭)*/
+@media screen and (max-width:360px){
+		#header,#footer,#contents{width:100%;
+														overflow:hidden;}
+
+	.top,.load,.content h3,form > img{display:none;}
+	#part1{width:20%;}
+	#part1 img{width:100%;}
+	.menu ul li,.left_b ul li{margin:5px 0;}
+#part2{width:68%;}
+.intro > img{width:100%;}
+
+.footermenu a{display:none;}
+#footer form{display:none;}
+
+.br{display:block;}
+
+	}
+
+

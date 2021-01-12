@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@charset "utf-8";
+
+body,div,h1,h2,h3,ul,li,a,img,p,dl,dt,dd,form,fieldset,legend,label,input,address,cite,select,table,caption,th,tr,td,thead,tbody,colgroup{margin:0; padding:0;}
+ul{list-style-type:none;}
+address,cite{font-style:normal;}
+img, fieldsest{border:none;}
+a:link, a:visited, a:hover, a:active{text-decoration:none;}
+
+body,select{font-size:12px;
+			color:#333;
+			font-family: 'Nanum Gothic', sans-serif;}
+legend,label,.skip{width:1px;
+						height:1px;
+						overflow:hidden;
+						position:absolute;
+						left:-999px;
+						font-size:0;
+						line-height:0;
+						visibility:hidden;}
+
+#skipNavi{position:absolute;
+					z-index:999;
+					width:100%;
+					height:20px;
+					}
+#skipNavi a{position:absolute;
+					top:-100px;}
+#skipNavi a:active,
+#skipNavi a:hover,
+#skipNavi a:focus{position:absolute;
+								top:0;
+								width:100%;
+								padding:15px;
+								background-color:#333;
+								color:#fff;
+								font-weight:bold;
+								font-size:20px;
+								display:black;
+								text-align:center;}
+select,input,img{vertical-align:middle;}
+
+/*여기까지 기본작업*/
+
+
+
+

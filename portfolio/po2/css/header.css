@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+h1{padding:20px;
+	float:left;}
+
+/*유저메뉴*/
+.usermenu{overflow:hidden;
+					position:absolute;
+					top:15px; right:100px;
+					}
+.usermenu li{float:left;
+					color:#c3c3c3;
+					margin-left:10px;}
+.usermenu li a{color:#898989;}
+.usermenu li a:hover{color:#333;}
+
+
+/*주메뉴*/
+#gnbWrap{width:950px;
+				float:right;
+				height:200px;
+				font-size:15px;
+				background:url(../images/gnb_bg.gif) no-repeat 25px 10px;
+				}
+
+
+
+#gnbWrap > ul{position:absolute;
+						top:35px; right:100px;
+						}
+
+#gnbWrap > ul > li{float:left;
+							width:147px;
+							height:35px;
+							text-align:center;
+							padding-top:15px;
+							font-weight:bold;}
+
+#gnbWrap > ul > li > a{color:#d07601; width:147px;
+										height:50px;
+										display:inline-block;}
+#gnbWrap > ul > li > a:hover{color:#fff;}
+
+#gnbWrap> ul > li:hover{background:url(../images/gnb_overbg.gif) no-repeat 0px 0;
+										width:147px;
+										height:50px;
+										display:inline-block;
+										color:#fff;}
+
+/*서브메뉴*/
+.sGnbArea {display:none;}
+#gnbWrap #gnb .on .sGnbArea {display:block;}
+#gnbWrap ul li ul{position:absolute;
+					top:60px;
+					overflow:hidden;}
+#gnbWrap ul li ul li{line-height:1.6;
+						float:left;
+						margin-left:20px;}
+#gnbWrap ul li ul li a{color:#a0410d;}
+#gnbWrap ul li ul li a:hover{color:#fe5e09;}
+
+.submenu1{left:20px;}
+.submenu2{left:170px; }
+.submenu3{left:320px; }
+.submenu4{left:360px;}
+.submenu5{left:370px; }
+
+
+
+

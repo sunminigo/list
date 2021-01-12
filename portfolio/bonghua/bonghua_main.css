@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&subset=korean');
+
+
+/************* S : reset *************/
+html,body,h1,h2,img,div,ul,li,p,span,a{margin:0;padding:0;line-height:100%;font-family:'Nanum Gothic',sans-serif;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-m-box-sizing:border-box;box-sizing:border-box;}
+/* ::-webkit-scrollbar{ width:3px;} ::-webkit-scrollbar-thumb{ background:#a9a9a9;} */
+label,input,button,select,img{margin:0;padding:0;vertical-align:middle;outline:none;font-family:'Nanum Gothic',sans-serif;font-size:12px;}
+button,img{border:none;background:none;cursor:pointer;}
+p{margin:0;padding:0;word-break:break-all;}
+a:link,a:visited{text-decoration:none;color:#333;}
+a:hover,a:focus,a:active{color:#333;}
+ul,li{list-style:none;}
+button:focus,a:focus{outline:none;}
+.hide{width:1px;height:1px;overflow:hidden;visibility:hidden;line-height:0;font-size:0;position:absolute;left:-999px;}
+
+/* color */
+.point_red{color:#ff0000;}
+.point_green{color:#159606;}
+/************* E : reset *************/
+
+
+/************* S : layout *************/
+html,body{width:100%;height:100%;font-size:20px;}
+html.fix,body.fix{overflow:hidden;}
+
+.wrapper{width:100%;height:100%;}
+.header_wrap,.footer_wrap{position:relative;width:100%;}
+{position:relative;width:100%;}
+
+@media screen and (max-width: 700px){
+	html,body{font-size:16px;}
+}
+@media screen and (max-width: 480px){
+	html,body{font-size:9px;}
+}
+/************* E : layout *************/
+
+
+/************* S : header *************/
+.header{position:relative;padding:4% 0;border-bottom:1px solid #d3d3d3;overflow:hidden;}
+.header a{display:block;}
+.header img{width:100%;height:100%;}
+
+.header .btn_burger{position:absolute;top:35%;left:3vw;}
+.header .btn_burger .bar{display:block;width:5.4vw;height:5.4vw;background:url('images/icon_sidemenu.png') no-repeat top left / 100%;}
+
+.header .logo a{width:35vw;height:inherit;margin:0 auto;text-align:center;font-size:4.5vw;}
+.header .search_box{position:absolute;top:30%;right:3vw;width:7vw;}
+
+/* 사이드바 */
+.side_menu{position:absolute;top:14.8vw;left:-100%;width:100%;height:100vh;z-index:100;
+-webkit-transition: all ease 1s 0s;
+-moz-transition: all ease 1s 0s;
+-ms-transition: all ease 1s 0s;
+-o-transition: all ease 1s 0s;
+transition: all ease 1s 0s;
+}
+.side_menu.active{left:0;}
+.side_menu .side_bg{position:relative;width:60%;height:100vh;padding:1vw 5vw 5vw;background-color:#003c58;overflow-y:auto;}
+
+/* 사이드바 메뉴 */
+.side_menu .menu_side{text-align:center;margin-top:5vw;padding-bottom:30vw;}
+.side_menu .menu_side li{position:relative;width:43vw;margin:7vw auto 0;}
+.side_menu .menu_side li:first-child{border-top:none;}
+.side_menu .menu_side li:before{content:'·';display:inline-block;position:absolute;top:50%;left:0;transform:translateY(-50%);font-size:4rem;color:#4dc1f0;}
+.side_menu .menu_side li.qr:before{top:88%;}
+
+.side_menu .menu_side li a{display:block;color:#fefefe;font-size:1.6875rem;}
+.side_menu .menu_side li.active a{color:#ff0000;}
+.side_menu .menu_side li.point_green a{color:#159606;}
+
+.side_menu .menu_side li span{display:inline-block;}
+.side_menu .menu_side li.active span:before{color:#ff0000;}
+.side_menu .menu_side li.point_green span:before{color:#159606;}
+.side_menu .menu_side li.qr span{padding-top:28%;background:url('images/icon_qr.png') no-repeat center top / 35%;}
+
+/* 사이드바 닫기 */
+.side_menu .btn_close{position:absolute;top:5px;right:0;width:8vw;height:8vw;background:url('images/icon_close.png') no-repeat 0 0 / 100%;}
+.side_menu .btn_close .bar{display:none;}
+/* .side_menu .btn_close .bar{display: inline-block;position: relative;margin: 0 20px 0 10px;padding: 0;width: 2px;height: 20px;background: #fff;transform: rotate(45deg);}
+.side_menu .btn_close .bar:before{display: block;content: "";position: absolute;top: 50%;left: -8px;width: 20px;height: 2px;margin-top: -1px;background: #fff;} */
+
+@media screen and (max-width: 640px){
+
+	.side_menu{top:15vw;}
+	.side_menu .menu_side li.qr span{padding-top:30%;}
+}
+@media screen and (max-width: 480px){
+	.side_menu .menu_side li{width:41vw;}
+	.header .btn_burger span{height:3px;}
+	.side_menu .menu_side li.qr span{padding-top:33%;}
+}
+/************* E : header *************/
+
+
+/************* S : footer *************/
+.footer_wrap{padding:5vw 2vw;background-color:#fff;}
+.footer_wrap ul{display:flex;justify-content:center;align-items:center;}
+.footer_wrap ul li{width:calc(100% / 6);}
+.footer_wrap ul li img{width:90%;height:auto;}
+/************* E : footer *************/
+
+
+/************* S : container *************/
+.main{background:#4dc1f0;}
+.main a{display:block;}
+
+.main .container_box{height:auto;/*270px*//*margin:0 40px 0;*/padding:0.5vh 7vw 8vh;}
+
+.main .container_box .visual img{width:100%;height:auto;}
+
+.main .menu_bottom{display:flex;align-items:flex-end;flex-direction:row;flex-wrap:wrap;align-content:flex-start;}
+.main .menu_bottom li{text-align:center;flex-basis:25%;border-top:1px solid #7cdcee;border-left:1px solid #7cdcee;}
+.main .menu_bottom a{display:block;height:24vw;padding:15vw 0 2vw;font-size:1.625rem;font-weight:600;color:#fff;background-position:center 4vw;background-size:35%;background-repeat:no-repeat;}
+.main .menu_bottom li:first-child a{background-image:url('images/icon_menu01.png');}
+.main .menu_bottom li:nth-child(2) a{background-image:url('images/icon_menu02.png');background-position:center 5.5vw;}
+.main .menu_bottom li:nth-child(3) a{background-image:url('images/icon_menu03.png');}
+.main .menu_bottom li:nth-child(4) a{background-image:url('images/icon_menu04.png');background-position:center 5.5vw;}
+.main .menu_bottom li:nth-child(5) a{background-image:url('images/icon_menu05.png');}
+.main .menu_bottom li:nth-child(6) a{background-image:url('images/icon_menu06.png');background-position:center 6vw;}
+.main .menu_bottom li:nth-child(7) a{background-image:url('images/icon_menu07.png');background-position:center 6.5vw;}
+.main .menu_bottom li:nth-child(8) a{background-image:url('images/icon_menu08.png');background-position:center 5vw;}
+/************* E : container *************/

@@ -1,0 +1,13 @@
+@charset "utf-8";
+#wrapper{width:1000px;
+		position:relative;
+		margin:0 auto;}
+
+#header{position:relative;
+				height:190px;}
+
+#container{position:relative;
+}
+
+#footer{position:relative;
+			height:170px;}

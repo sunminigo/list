@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YEONGJU</title>
+	
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/yeongju_style.css">
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+
+</head>
+<body>
+	<div class="wrapper main_page">
+		<div class="header_wrap">
+			<h1 class="logo"><img src="./images/logo.png" alt="소백힐링영주여행로고"></h1>
+			<div class="search_wrap">
+				<input type="text" class="input_search">
+			</div>
+		</div>
+		
+		<div class="container_wrap">
+			<div class="visual_wrap">
+				<div><a href=""><img src="./images/main/visual_img1.jpg" alt="유네스코세계문화유산등재"></a></div>
+				<div><a href=""><img src="./images/main/visual_img1_2.jpg" alt="유네스코세계문화유산등재"></a></div>
+				<div><a href=""><img src="./images/main/visual_img1_3.jpg" alt="유네스코세계문화유산등재"></a></div>
+			</div>
+			
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.visual_wrap').slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						autoplay: false,
+						autoplaySpeed: 2000,
+						dots: true,
+						arrows: false,
+					});
+				});
+			</script>
+			
+			<div class="intro1_wrap">
+				<p class="intro1">
+					온정이 풍기는 선비의 고장 <span class="c_midBlue">영주!</span><br>
+					<span class="intro2">여행을 하는동안 필요한 팁과 정보를 제공해드립니다.</span>
+				</p>
+				
+			</div>
+			
+			<ul class="intro2_wrap">
+				<li class="info info1"><a href="">문화유산</a></li>
+				<li class="info info2"><a href="">축제공연</a></li>
+				<li class="info info3"><a href="">대표음식</a></li>
+				<li class="info info4"><a href="">특산물</a></li>
+				<li class="info info5"><a href="">쇼핑</a></li>
+			</ul>
+			
+			<div class="intro3_wrap">
+				<a href="" class="lang_wrap c_midBlue">
+					<span class="tit">세계문화유산<br>다국어듣기</span>
+				</a>
+				<a href="" class="video_wrap c_midBlue">
+					<span class="tit ">만화로 보는<br>영주이야기</span>
+				</a>
+			</div>
+		</div>
+	
+		<div class="footer_wrap">
+			<a class="ft_nav1" href="">영주관광</a>
+			<a class="ft_nav2" href="">여행지도</a>
+			<a class="ft_nav3" href="">체험여행</a>
+			<a class="ft_nav4" href="">QR스캔</a>
+		</div>
+	</div>
+	
+</body>
+</html>

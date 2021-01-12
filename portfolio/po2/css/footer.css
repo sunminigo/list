@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+#footerwrap{width:100%;
+			border-top:2px solid #c3c3c3;
+			padding:10px;
+			background-color:#ebebeb;
+			overflow:hidden;}
+
+.footerlogo{float:left;
+					width:248px;
+					margin:10px 0 0 20px;}
+
+address{line-height:1.6;
+				margin:25px 0 0 70px;
+				float:left;
+				color:#333;}
+
+address span{color:#ff9966;
+						font-size:15px;
+						font-weight:bold;}

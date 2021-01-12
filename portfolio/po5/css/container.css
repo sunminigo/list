@@ -1,0 +1,248 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(footer.css);
+
+#part1{clear:both;
+			width:100%;}
+
+.visual{position:relative;
+			float:left;
+			width:75%;}
+.visual img{width:100%;}
+.popupimg{position:absolute;
+			top:70px; right:10px;
+			cursor:pointer;
+			float:left;}
+.pop_btn{position:absolute;
+				top:51px; right:15px;}
+.pop_btn li{float:left;
+					margin-left:3px;}
+
+
+
+.right{float:right;
+			width:20%;
+}
+
+
+.login{
+		margin:15px 0;}
+
+.login h2{}
+.login input[type="text"],
+.login input[type="password"]{width:135px;
+								height:20px;
+								margin:5px 0;
+								padding-left:3px;}
+
+.lo_btn{margin:5px;}
+.lo_btn .color{color:#c3c3c3;}
+
+
+
+
+
+
+
+#part2{clear:both;
+			padding:5px 0;
+			height:110px;
+			background:url(../images/fo_bg.gif) no-repeat 0 0/1000px 110px;}
+
+.local{position:relative;}
+.local li{width:20%;
+			float:left;}
+.local h3{margin:8px 15px 0 15px;}
+
+
+#list1 li{position:absolute; top:35px; left:15px;}
+#list2 li{position:absolute; top:35px; left:215px;}
+#list3 li{position:absolute; top:35px; left:415px;}
+#list4 li{position:absolute; top:35px; left:615px;}
+#list5 li{position:absolute; top:35px; left:815px;}
+
+.lo_btn1{position:absolute; top:9px; left:160px; float:left;}
+.lo_btn2{position:absolute; top:9px; left:360px; float:left;}
+.lo_btn3{position:absolute; top:9px; left:560px; float:left;}
+.lo_btn4{position:absolute; top:9px; left:760px; float:left;}
+.lo_btn5{position:absolute; top:9px; left:960px; float:left;}
+
+
+
+
+
+#part3{position:relative;
+			overflow:hidden;}
+
+.quick{width:25%;
+			float:left;}
+.quick ul{}
+.quick ul li{float:left;
+				width:50%;}
+
+.notice{width:45%;
+			float:left;
+			position:relative;
+}
+.notice h3{}
+.more{position:absolute;
+			top:0; right:5px;}
+.notice .img{width:100%;
+		height:130px;
+margin-right:10px;}
+
+
+.guide{float:right;
+			width:30%;}
+.info1{clear:both;}
+.info1 p{display:block;
+				text-align:center;}
+
+
+.info2{text-align:center;}
+.info2 h3{margin:20px 0 5px 30px;
+				text-align:left;}
+
+
+
+
+
+/*780(브라우저 가로폭)*/
+@media screen and (max-width:780px){
+	#header,#footer,#contents{width:100%;
+												overflow:hidden;}
+	#headerwrap{background:url(../images/top_bg.gif) no-repeat 0 0/68px 7px, url(../images/top_line.gif) repeat-x 68px 0, url(../images/menu_bg.gif) no-repeat -500px 70px/2880px 5px;}
+
+	#header {position:relative;}
+	#header h1{width:100%;}
+
+	#gnb{display:none;}
+
+	.reservation, .login{display:none;}
+	.visual{width:100%;
+						overflow:hidden;}
+	.reservation li{float:left;}
+	
+	.popupimg{position:absolute;
+						top:75px; right:12px;
+						cursor:pointer;
+						float:left;}
+	.pop_btn{position:absolute;
+					top:52px; right:15px;
+					cursor:pointer;}
+	.pop_btn li{float:left;
+						margin-left:4px;}
+
+
+
+
+
+	#part2{background:url(../images/fo_bg.gif) no-repeat 0 0/761px 110px;
+				width:100%;
+				overflow:hidden;}
+	.local li{width:20%;}
+#list1 li{position:absolute; top:35px; left:15px;}
+#list2 li{position:absolute; top:35px; left:165px;}
+#list3 li{position:absolute; top:35px; left:315px;}
+#list4 li{position:absolute; top:35px; left:470px;}
+#list5 li{position:absolute; top:35px; left:620px;}
+
+.lo_btn1{position:absolute; top:9px; left:130px; float:left;}
+.lo_btn2{position:absolute; top:9px; left:283px; float:left;}
+.lo_btn3{position:absolute; top:9px; left:430px; float:left;}
+.lo_btn4{position:absolute; top:9px; left:585px; float:left;}
+.lo_btn5{position:absolute; top:9px; left:730px; float:left;}
+
+.list1 img,.list2 img,.list3 img,.list4 img,.list5 img{width:140px; height:55px;}
+
+.quick{clear:both;
+			width:60%;}
+.quick li{float:left;
+				}
+.notice{display:none;}
+
+.guide{float:left;
+			width:40%}
+
+.info1 a{margin-left:10px;}
+.info2 a{margin-right:20px;}
+.info2 h3{margin:15px 0 5px 0;}
+
+
+
+.footermenu a{display:none;}
+#footer form{display:none;}
+
+.callcenter{text-align:center;
+					width:100%;
+					clear:both;}
+
+.address{clear:both;
+				padding:15px 10px;
+				text-align:center;
+					width:100%;}
+
+.warning{margin-left:10px;
+				text-align:center;
+					width:100%;}
+
+
+
+
+
+
+
+}
+
+
+
+	/*360(브라우저 가로폭)*/
+@media screen and (max-width:360px){
+		#header,#footer,#contents{width:100%;
+														overflow:hidden;}
+
+	.visual{display:none;}
+	.reservation li{float:left;
+							width:100%;}
+	
+
+	#part2{width:100%;
+				overflow:hidden;
+				background:none;
+				height:280px;
+				position:relative;}
+	.local li{width:50%;
+				}
+	.local h3{float:left;
+					height:80px;}
+	.local li:first-child{margin-top:0;}
+#list1 li{position:absolute; top:35px; left:15px;}
+#list2 li{position:absolute; top:35px; left:185px;}
+#list3 li{position:absolute; top:120px; left:15px;}
+#list4 li{position:absolute; top:120px; left:185px;}
+#list5 li{position:absolute; top:207px; left:15px;}
+
+.lo_btn1{position:absolute; top:9px; left:130px; float:left;}
+.lo_btn2{position:absolute; top:9px; left:300px; float:left;}
+.lo_btn3{position:absolute; top:102px; left:130px; float:left;}
+.lo_btn4{position:absolute; top:102px; left:300px; float:left;}
+.lo_btn5{position:absolute; top:187px; left:130px; float:left;}
+
+.list1 img,.list2 img,.list3 img,.list4 img,.list5 img{width:140px; height:55px;}
+
+.info1 a{margin-left:10px;}
+.info2{display:none;}
+
+
+
+.footermenu a{display:none;}
+#footer form{display:none;}
+
+.br{display:block;}
+
+
+	}
+
+

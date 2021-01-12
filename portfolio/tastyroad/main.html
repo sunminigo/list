@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TASTYROAD</title>
+	
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/slick.js"></script>
+
+</head>
+<body>
+	<div class="wrapper main_page">
+		<div class="header_wrap">
+            <h1 class="logo"><a href=""><img src="./images/logo.png" alt="마포용강맛깨비길"></a></h1>
+            <button class="side_btn btn_menu"><img src="./images/ic_menu.png" alt="메뉴"></button>
+            <button class="side_btn btn_search"><img src="./images/ic_search.png" alt="검색"></button>
+		</div>
+		
+		<div class="container_wrap">
+			<div class="visual_wrap">
+				<div><a href=""><img src="./images/main/visual_img1.jpg" alt="맛깨비길"></a></div>
+				<div><a href=""><img src="./images/main/visual_img2.jpg" alt="맛깨비길"></a></div>
+				<div><a href=""><img src="./images/main/visual_img3.jpg" alt="맛깨비길"></a></div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.visual_wrap').slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						autoplay: false,
+						autoplaySpeed: 2000,
+						dots: true,
+						arrows: false,
+					});
+				});
+			</script>
+            
+            <div class="main_bottom">
+                <a href="" class="item item1 bg_darkGray2">
+                    <div>
+                        <h2>맛깨비여행</h2>
+                        <p>오늘은 뭘 먹을까? 맛집투어</p>
+                    </div>
+                </a>
+                <a href="" class="item item2 bg_lightGray">
+                    <div>
+                        <h2>상인회</h2>
+                    </div>
+                </a>
+                <a href="" class="item item3 bg_orange">
+                    <div>
+                        <h2>회원업종</h2>
+                        <p>다양한 회원업종을 소개합니다.</p>
+                    </div>
+                </a>
+                <a href="" class="item item4 bg_orange3">
+                    <div>
+                        <h2>인증업소</h2>
+                        <p>맛깨비길 인증된 업소를 찾아보세요!</p>
+                    </div>
+                </a>
+                <a href="" class="item item5">
+                    <div>
+                        <h2 class="c_orange2">당첨 이벤트</h2>
+                        <p class="c_gray">다양한 이벤트에 참여하세요!</p>
+                    </div>
+                </a>
+                <a href="" class="item item6 bg_orange">
+                    <div>
+                        <h2>협찬</h2>
+                    </div>
+                </a>
+                <a href="" class="item item7 bg_darkGray2">
+                    <div>
+                        <h2><span class="c_yellow">QR</span>코드</h2>
+                    </div>
+                </a>
+            </div>
+		</div>
+	</div>
+</body>
+</html>

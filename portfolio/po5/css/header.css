@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#headerwrap{
+background:url(../images/top_bg.gif) no-repeat 0 0/68px 7px, url(../images/top_line.gif) repeat-x 68px 0, url(../images/menu_bg.gif) no-repeat center 70px/2880px 35px;}
+
+
+#header h1{padding:10px 0;
+					float:left;
+					}
+
+
+
+#top{overflow:hidden;
+		/*position:absolute;
+		top:45px; right:35px;*/}
+#top ul{float:right;
+			padding:43px 55px 0 0;}
+#top ul li{float:left;
+				margin-left:2px;
+				}
+.fb{position:absolute;
+		top:42px; right:26px;
+		}
+.fb img{width:15px; height:15px;}
+.all{position:absolute;
+		top:42px; right:0;}
+
+
+#gnb{width:100%;
+		clear:both;
+			overflow:hidden;}
+#gnb > ul > li{width:12.5%;
+				float:left;}
+#gnb ul li ul{position:absolute;
+					top:105px;
+					 z-index:1;
+					 width:100%;}
+#gnb ul li ul li{float:left;
+						}
+.submenu1{left:0; background:url(../images/sub_bg.png) no-repeat; width:100%; height:25px; }
+.submenu2{left:120px; background:url(../images/sub_bg.png) no-repeat -120px 0; width:100%; height:25px;}
+.submenu3{left:190px; background:url(../images/sub_bg.png) no-repeat -190px 0; width:100%; height:25px;}
+.submenu4{left:300px; background:url(../images/sub_bg.png) no-repeat -300px 0; width:100%; height:25px;}
+.submenu5{left:325px; background:url(../images/sub_bg.png) no-repeat -325px 0; width:100%; height:25px;}
+.submenu7{left:100px; background:url(../images/sub_bg.png) no-repeat; width:100%; height:25px;}
+.submenu10{left:750px; background:url(../images/sub_bg.png) no-repeat -750px 0; width:100%; height:25px;}
+
+
+
+
+
+
+
+
+
+
+
+

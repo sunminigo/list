@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="Generator" content="">
+<meta name="Author" content="">
+<meta name="Keywords" content="봉화은어축제">
+<meta name="Description" content="봉화은어축제">
+<title>-</title>
+<!-- css -->
+<link type="text/css" rel="stylesheet" media="screen" href="bonghua_main.css"/>
+<!-- cdn -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="header_wrap">
+		<!-- S : 헤더영역 -->
+		<div class="header">
+			<div class="btn_burger">
+				<span class="bar"></span>
+			</div>
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt="제21회 봉화은어축제"/></a>
+			</div>
+			<div class="search_box">
+				<a href="bonghua_main.html">
+					<img src="images/icon_home.png" alt="go main"/>
+				</a>
+			</div>
+		</div>
+		<!-- E : 헤더영역 -->
+		<!-- S : 사이드메뉴 -->
+		<div class="side_menu">
+			<div class="side_bg">
+				<ul class="menu_side">
+					<li><a href="#"><span>홍보영상</span></a></li>
+					<li><a href="#"><span>축제일정</span></a></li>
+					<li><a href="#"><span>행사안내</span></a></li>
+					<li><a href="#"><span>오시는길</span></a></li>
+					<li><a href="#"><span>주변관광</span></a></li>
+					<li><a href="#"><span>음식</span></a></li>
+					<li><a href="#"><span>숙박</span></a></li>
+					<li class="qr"><a href="#"><span>이벤트 큐알스캔</span></a></li>
+				</ul>
+				<div class="btn_close"><span class="bar"></span></div>
+			</div>
+		</div>
+		<!-- E : 사이드메뉴 -->
+	</div>
+	<div class="container_wrap main">
+		<div class="leaf"></div>
+		<div class="container_box">
+			<div class="visual">
+				<img src="images/visual.jpg" alt="7월27일토요일부터8월4일일요일까지 봉화읍 체육공원 "/>
+			</div>
+		</div>
+		<ul class="menu_bottom">
+			<li>
+				<a href="#">
+					<span>이벤트</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>축제일정</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>행사안내</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>오시는 길</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>주변관광</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>음식</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>숙박</span>
+				</a>
+			</li>
+			<li class="qr">
+				<a href="#">
+					<span>큐알코드</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="footer_wrap">
+		<ul>
+			<li><img src="images/ft_logo01.jpg" alt="(사)봉화군축제위원회"/></li>
+			<li><img src="images/ft_logo02.jpg" alt="봉화군"/></li>
+			<li><img src="images/ft_logo03.jpg" alt="경사북도"/></li>
+			<li><img src="images/ft_logo04.jpg" alt="문화체육관광부"/></li>
+			<li><img src="images/ft_logo05.jpg" alt="한국관광공사"/></li>
+			<li><img src="images/ft_logo06.jpg" alt="경상북도문화관광공사"/></li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.btn_burger').click(function(){
+		$('.side_menu').addClass('active');
+		$('html, body').addClass('fix');
+	});
+	$('.side_menu .btn_close').click(function(){
+		$('.side_menu').removeClass('active');
+		$('html, body').removeClass('fix');
+	});
+});
+</script>
+</body>
+</html>

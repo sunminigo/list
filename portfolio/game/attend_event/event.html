@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>출석이벤트</title>
+
+<style type="text/css">
+html,body,div,map,area,img,span,table,tbody,tr,td,button,p,h1,a,ol,li{margin:0;padding:0;}
+img{border:none;}
+ol{list-style-type:none;}
+h1{position:relative;padding-top:29px;}
+h1 a{display:block;width:165px;height:27px;margin:0 auto;}
+.wrap{width:600px;height:600px;background:url('attend.jpg') no-repeat left top;}
+p,li,.btn_wrap{opacity:0;}
+ol{width:497px;height:353px;margin:70px 0 24px 48px;}
+li{float:left;width:66px;height:66px;margin:0 0 5px 5px;}
+.stamp{display:inline-block;width:66px;height:66px;background:url('stamp.png') no-repeat center;background-color:rgba(35,138,99,0.48);}
+.btn_wrap{height:45px;text-align:center;}
+.btn_wrap button{width:50%;height:55px;cursor:pointer;}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+		var num=-1;
+	    $(".btn_attend").click(function(){
+			num++;
+			$("li").eq(num).css('opacity','1');
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="content">
+			<h1><a href="https://www.greenvolt.co.kr/" title="그린볼트바로가기"></a></h1>
+			<p class="top">그린볼트 연말연시 출석이벤트 다가오는 2018년 무술년을 맞이하여 매일 방문해 주시는 분들께 엄청난 포인트를 드립니다</p>
+			<ol id="calendar">
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+				<li><span class="stamp"></span></li>
+
+			</ol>
+			<div class="btn_wrap">
+				<button class="btn_cancle" title="취소">취소</button><button class="btn_attend" title="출석하기">출석하기</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

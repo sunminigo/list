@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* main */
+.visual{width:100%;position:relative;margin:5px 0 20px 0;overflow:hidden;clear:both;text-align:center;float:left;}
+.visual ul{width:1600%;}
+.visual li{float:left;width:6.5%;}
+.visual li img{width:100%;}
+
+#btnGroup{position:absolute;bottom:-20px;left:600px;}
+#btnGroup li{background:url('../images/best_btn.gif') no-repeat -1px -10px;padding:10px;}
+#btnGroup a{display:none;}
+.btn_L{position:absolute;top:110px; left:0;}
+.btn_R{position:absolute;top:110px; right:0;}
+
+#part1{clear:both;overflow:hidden;padding:0 5px;height:155px;position:relative;}
+.slideshow{position:relative;width:60%;overflow:hidden;float:left;}
+.slideshow h3{}
+.slideshow ul{width:1110%;}
+.slideshow ul li{border:2px solid #eae0b2;float:left;width:8.9%;}
+.slideshow ul li img{width:100%;}
+
+#navi{float:left;margin-top:10px;position:absolute;bottom:-5px;left:50%;margin-left:-25%;}
+#navi > a{width:25%;padding:7px 5px 0 5px;margin-left:10px;background:url('../images/best_btn.gif') no-repeat -1px -10px / 100% 100%;}
+#navi span{display:none;}
+#navi > a:first-child{margin-left:70px;}
+
+#quick{width:40%;float:left;height:200px;}
+#quick ul{width:150%;}
+#quick ul li{float:left;width:30%;text-align:center;margin: 0 0 10px 10px;border:2px solid #eae0b2;padding-top:3px;}
+#quick ul li img{width:100%;}
+#quick span{display:block;font-size:11px;margin-top:3px;}
+
+#part2{width:100%;height:83px;}
+.bannerimg p{float:left;margin:1px;width:49%;}
+.bannerimg p img{border:3px solid #eae0b2;width:100%;}
+
+.center{font-weight:bold;margin:10px 2px;width:200%;}
+.center p{clear:both;padding:5px;}
+.center span{color:#bb9c11;}
+
+/* sub01 */
+#container.sub01{background-color:#ebebeb;}
+
+.sub01 h3{margin:20px;}
+.sub01 form{margin-left:5px;height:33px;width:100%;}
+.sub01 select{background:url('../images/sub1_input.gif')no-repeat;}
+.sub01 #listimg ul li img{width:100%;padding:10px 0;}
+
+/* sub02 */
+#container.sub02{background-color:#ebebeb;padding:20px 0;}
+
+.sub02 #select{margin-bottom:30px;}
+.sub02 #select ul{width:100%;}
+.sub02 #select ul li{background:url('../images/sub2_05.gif') no-repeat;float:left;width:20%;padding-left:20px;}
+.sub02 #select ul li:first-child{background:none;padding-left:10px;}
+.sub02 #select ul li img{width:100%;}
+
+.sub02 #listimg{clear:left;}
+.sub02 #listimg ul li{float:left;width:50%;}
+.sub02 #listimg ul li img{width:100%;}

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="Generator" content="">
+<meta name="Author" content="">
+<meta name="Keywords" content="ONE플랫폼">
+<meta name="Description" content="ONE플랫폼">
+<title>ONE플랫폼</title>
+<!-- css -->
+<link type="text/css" rel="stylesheet" media="screen" href="main.css"/>
+</head>
+<body>
+<div class="wrapper">
+	<div class="header_wrap">
+		<!-- S : 헤더영역 -->
+		<div class="header">
+			<div class="btn_burger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="logo">
+				<a href="#">ONE플랫폼</a>
+			</div>
+			<div class="search_box">
+				<a href="#">
+					<img src="images/icon_search.png" alt="go search"/>
+				</a>
+			</div>
+		</div>
+		<!-- E : 헤더영역 -->
+		<!-- S : 사이드메뉴 -->
+		<div class="side_menu">
+			<div class="side_bg">
+				<div class="side_logo">
+					<a href="#">ONE플랫폼</a>
+				</div>
+				<ul class="menu_side">
+					<li class="active"><a href="#"><span>HOME</span></a></li>
+					<li><a href="#"><span>플랫폼가게</span></a></li>
+					<li><a href="#"><span>상품지도</span></a></li>
+					<li><a href="#"><span>직거래장터</span></a></li>
+					<li><a href="#"><span>여행</span></a></li>
+					<li><a href="#"><span>마이여행</span></a></li>
+					<li><a href="#"><span>이벤트</span></a></li>
+					<li class="point_green"><a href="#"><span>QR코드</span></a></li>
+				</ul>
+				<div class="btn_close"><img src="images/icon_back.png" alt="close side menu"/></div>
+			</div>
+		</div>
+		<!-- E : 사이드메뉴 -->
+	</div>
+	<div class="container_wrap main">
+		<div class="leaf"></div>
+		<div class="apple_box">
+			<div class="menu">
+				<a href="#"><img src="images/icon_apple01.png" alt="">One플랫폼</a>
+				<a href="#"><img src="images/icon_apple02.png" alt="">OnePay</a>
+				<a href="#"><img src="images/icon_apple03.png" alt="">이벤트</a>
+				<a href="#"><img src="images/icon_apple04.png" alt="">파트너</a>
+			</div>
+			<div class="apple_txt">
+				<p><b class="point_red">One</b> Pay <b class="point_red">One</b> Platform</p>
+				<p>신뢰를 담는 그릇, 원플랫폼</p>
+			</div>
+		</div>
+		<ul class="menu_middle">
+			<li>
+				<a href="#">
+					<img src="images/icon_mid01.png" alt="">직거래장터
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/icon_mid02.png" alt="">사업안내
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/icon_mid03.png" alt="">지역센터
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/icon_mid04.png" alt="">게시판
+				</a>
+			</li>
+		</ul>
+		<ul class="menu_bottom">
+			<li><a href="#">여행</a></li>
+			<li><a href="#">여행지도</a></li>
+			<li><a href="#">OR코드</a></li>
+		</ul>
+	</div>
+	<div class="footer_wrap">
+		<address>
+			서울특별시 영등포구 여의대방로 379 제일빌딩 613호ㅣ대표자 : 최영<br/>
+			사업자등록번호 : 226-81-34891ㅣTel : 02-732-8837ㅣFax : 02-785-8837
+		</address>
+		<cite>Copyright ⓒ 2018 Korea Tourism Cooperative. All Rights Reserved.</cite>
+	</div>
+</div>
+<!-- cdn -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="prefixfree.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.btn_burger').click(function(){
+		$('.side_menu').addClass('active');
+	});
+	$('.side_menu .btn_close').click(function(){
+		$('.side_menu').removeClass('active');
+	});
+});
+</script>
+</body>
+</html>

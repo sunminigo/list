@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* 특징 */
+.feature_wrap .feature dl:first-child{margin-left:32px;}
+.swiper-slide{height:1px;}
+
+/* 스크린샷 */
+.swiper-container-android .swiper-slide, .swiper-wrapper{height:450px;overflow:hidden;}
+
+
+

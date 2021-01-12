@@ -1,0 +1,40 @@
+@charset "utf-8";
+body{background:url(../images/gnbbg.gif) repeat-x; }
+h1{float:left;
+	padding:20px 5px 10px 10px;}
+.visit{padding-top:68px;
+		float:left;}
+
+#usermenu{float:right;
+					padding-top:20px;
+					}
+#usermenu li{float:left;
+						margin-left:15px;
+						background:url(../images/usermenu_linebg.gif) no-repeat;
+						padding-left:13px;}
+#usermenu li:first-child{background:none;}
+
+.visit{font-size:11px;
+		color:#ababab;}
+.visit li{float:left; margin-left:10px;}
+.visit span{color:#7c7b7b;}
+
+#gnbmenu{clear:both;
+		width:1000px;
+		position:absolute;
+		top:125px; right:0;}
+.gnb li{float:left;
+					margin-left:90px;
+					}
+.gnb li ul{position:absolute;
+						top:40px;
+						}
+.gnb li ul li{margin-left:30px;}
+
+.submenu1{width:1000px; left:60px;}
+.submenu2{width:1000px; left:60px; }
+.submenu3{width:1000px; left:350px;}
+.submenu4{width:1000px; left:225px;}
+.submenu5{width:1000px; left:230px;}
+.submenu6{width:1000px; left:130px;}
+.submenu7{width:1000px; left:340px;}

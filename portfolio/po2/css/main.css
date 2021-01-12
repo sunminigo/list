@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+/*왼쪽*/
+.left{float:left;
+		width:1024px;
+		position:relative;
+		margin-left:20px;
+		overflow:hidden;
+		height:800px;}
+
+
+/*비주얼*/
+.visual{width:2048px;
+			padding:0 25px;
+			position:absolute;
+			top:0; left:0;
+			}
+
+.visual img{float:left;}
+
+.vi_btn{position:absolute;
+			bottom:60px; left:15px;}
+
+.vi_btn a{width:26px;
+				height:26px;
+				float:left;
+				margin-left:5px;
+				background:url(../images/btn_onoff.gif) no-repeat 0 1px;
+				font-weight:bold;
+				display:inline-block;}
+
+
+.vi_btn a.on{background:url(../images/btn_onoff.gif) no-repeat 0 -25px;}
+
+.vi_btn span{display:none;}
+
+
+.btn{float:left;
+		position:absolute;
+		bottom:60px; left:80px;}
+
+.prev img{width:25px;
+				height:25px;
+				margin-left:8px;}
+
+
+.next img{width:25px;
+				height:25px;
+				margin-left:8px;}
+
+.Visual ul li a{text-indent:-9999px;
+								display:block;}
+.Visual .visual_0{left:0; /* 시작은 0,0 */
+									background:url(img/keyVisual_0.jpg) 50% 0 no-repeat;}
+.Visual .visual_1{left:100%; /* 두번째사진은 자신의 크기만큼 */
+									background:url(img/keyVisual_1.jpg) 50% 0 no-repeat;}
+
+
+
+/*상담*/
+.coun{width:451px;
+			height:125px;
+			background:url(../images/counseling_bg.gif) no-repeat ;
+			position:relative;
+			position:absolute;
+			bottom:40px; right:0;}
+.coun img{position:absolute;
+				top:20px; right:8px;}
+
+
+/*오른쪽*/
+.right{float:right;
+		width:340px;
+		height:800px;
+		margin:0 0 0 10px;}
+
+
+/*공지*/
+.news{background:url(../images/news.gif) no-repeat;
+			width:340px;
+			height:273px;
+			margin:5px 0 0 0px;
+			position:relative;}
+.news ul{position:absolute;
+				top:45px; left:30px;}
+.news ul li a{line-height:2.5;
+				color:#333;}
+.news ul li a:hover{color:#a67c52;}
+.more{position:absolute;
+			top:20px; right:10px;}
+
+
+/*아이콘*/
+
+
+ .icon{list-style-type:none;
+			margin:10px 0;}
+ .icon li{ width:338px;
+				 cursor:pointer;
+				 padding:5px;}
+
+.icon li a{display:inline-block;	
+				width:338px; 
+				height:85px;
+				overflow:hidden;
+				text-decoration:none;
+				color:#b7b7b7;}
+
+.icon ul li a:hover{color:#464646;}
+
+.icon li span{ margin:15px 0 5px 0;
+						display:inline-block;
+						font-weight:bold;
+						font-size:14px;}
+
+.icon li p{line-height:2;}
+
+.icon li img{float:left; 
+					margin-right:15px;
+				}
+
+

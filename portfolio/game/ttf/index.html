@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="페이지 제목" />
+<meta property="og:description" content="페이지 설명" />
+<meta property="og:image" content="example.jpg" />
+<meta property="og:url" content="http://www.example.com" />
+<meta name="description" content="페이지설명" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no , target-densitydpi=medium-dpi"/>
+<title>ttf</title>
+
+<link rel="stylesheet" href="css/ttf_style.css" type="text/css" media="all" />
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="container">
+		<div class="bg_wrap main">
+			<div class="ttf_header_wrap">
+				<div class="ttf_header">
+					<h1><a href="index.html"><img src="images/game_logo.png" alt="탭탭판타지"/></a></h1>
+					<div class="ttf_gnb_wrap">
+						<a href="index.html" class="active">메인</a>
+						<a href="game_info.html">게임소개</a>
+						<a href="character.html">캐릭터소개</a>
+						<a href="feature_list.html">게임특징</a>
+					</div>
+					<button class="ttf_btn_menu"><img src="images/icon_menu.png" alt="메뉴버튼"/></button>
+				</div>
+				<div class="ttf_m_nav">
+					<h2><a href="index.html"><img src="images/side_logo.png" alt="탭탭판타지"/></a></h2>
+					<div class="ttf_gnb_wrap">
+						<ul>
+							<li><a href="index.html" class="active">메인</a></li>
+							<li><a href="game_info.html">게임소개</a></li>
+							<li><a href="character.html">캐릭터소개</a></li>
+							<li><a href="feature_list.html">게임특징</a></li>
+						</ul>
+					</div>
+					<div class="ttf_sns">
+						<a href="#" class="sns_fb">공식 페이스북 바로가기</a>
+						<a href="#" class="sns_cf">공식 카페 바로가기</a>
+					</div>
+					<div class="ttf_btn_close"><img src="images/btn_close.png" alt="닫기"/></div>
+				</div><!-- m_nav e -->
+			</div>
+			<div class="cont_wrap">
+				<div class="cont">
+					<button class="btn_start"><img src="images/btn_start.png" alt="start"/></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ft_wrapper">
+		<footer class="ft_wrap">
+			<div class="footer">
+				<div class="ft_menu"> 
+					<a href="#">회사소개</a>
+					<a href="#">이용약관</a>
+					<a href="#" class="privacy">개인정보 처리방침</a>
+					<a href="#">청소년 보호정책</a>
+					<a href="#">고객센터</a>
+				</div>
+				<div class="ft_logo"><a href="#"><img src="images/ft_company_logo.png" alt=""/></a></div>
+				<div class="ft_cont">
+					<div class="address">
+						<address>
+							<span>상호 : (주)시냅스게임즈</span><span>사업자등록번호 : 399-87-00333</span><br class="sbr"/><span>통신판매업신고 : 제 2016-서울강남-0067</span><span>대표 : 박준범</span><br class="wbr mbr sbr"/>
+							<span>주소 : 서울시 강남구 도곡로3길 27 동일빌딩 7층</span><br class="sbr"/><span>고객센터 : 070-4232-4973</span><span>개인정보보호책임자 : 박건희</span>
+						</address>
+						<cite>COPYRIGHT(C)SYNAPSGAMES CORP. ALL RIGHTS RESERVED.</cite>
+						<div class="grade"><img src="images/ft_grade.png" alt="grade"/></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/html5shiv-printshiv.js"></script>
+<script>
+$(window).load(function(){
+	//moNav
+	$('.ttf_btn_menu').click(function(){
+		$('.ttf_m_nav').stop().animate({'left':'0','opacity':'1'},500);
+		$('body').addClass('fixed');
+	});
+	$('.ttf_btn_close').click(function(){
+		$('.ttf_m_nav').stop().animate({'left':'-100%','opacity':'0'},500);
+		$('body').removeClass('fixed');
+	});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(footer.css);
+
+#up > img{width:100%;}
+
+#under{width:100%;
+			overflow:hidden;
+			position:relative;
+			margin-top:10px;}
+
+#part1{float:left;
+			width:20%;}
+
+.menu{}
+.menu ul{}
+.menu ul li,.left_b ul li{margin:5px 0;}
+
+
+#part2{float:left;
+			width:67%;
+			margin:0 20px;}
+.top{float:right;}
+.load li{float:left;
+				padding:0 10px;
+				background:url(../images/location_bar.gif) no-repeat 0px 1px;}
+.load li:first-child{background:none;}
+
+.icon{}
+.icon li{float:left;
+			margin-left:5px;}
+
+
+.content{position:relative;}
+.content h3{margin:15px 0;}
+.content form{background:url(../images/loginBox_bg.gif) repeat-x;
+border:3px solid #E5E5E5;
+padding:40px 0 20px 0;
+text-align:center;}
+form > img{position:absolute;
+				top:45px; left:10px;}
+input{border:3px solid #CCCCCC;
+		height:20px;
+		margin-right:10px;}
+input:hover{border:3px solid #44B414;}
+label{font-weight:bold;
+		color:#4C4C4C;}
+
+
+.arrow1{color:#999999;
+			margin:10px 0;
+			}
+.arrow1 span{color:#F76D1A;
+					font-weight:bold;}
+
+.join{display:inline-block;}
+.join > li{float:left;
+			margin-left:10px;
+			font-weight:bold;}
+
+.arrow2{background:url(../images/login_bar.gif) no-repeat 0 20px;
+padding-top:40px;
+margin-left:35px;}
+.arrow2 > p{clear:both;
+			background:url(../images/arrow_desc.gif) no-repeat 0 9px;
+			padding:5px;
+			text-align:left;
+			}
+
+#quick{width:*;
+			text-align:center;
+			background:url(../images/qm_bg.gif) repeat-y;
+			position:absolute;
+			right:0px;
+			top:0px;}
+#quick ul li{padding:5px 0 0 0;
+					}
+.line{background:url(../images/qm_line.gif) no-repeat 5px 0;
+margin:5px 0;}
+
+
+
+
+
+/*780(브라우저 가로폭)*/
+@media screen and (max-width:780px){
+	#header,#footer,#contents{width:100%;
+												overflow:hidden;}
+	#headerwrap{background:url(../images/top_bg.gif) no-repeat 0 0/68px 7px, url(../images/top_line.gif) repeat-x 68px 0, url(../images/menu_bg.gif) no-repeat -500px 70px/2880px 5px;}
+
+	#header {position:relative;}
+	#header h1{width:100%;}
+
+	#gnb,#quick,label{display:none;}
+
+	#part1 img{width:150px;}
+	.menu ul li,.left_b ul li{margin:5px 0;}
+
+
+
+	.arrow2{background:url(../images/login_bar.gif) no-repeat 0 20px/520px 1px;
+	padding-top:40px;
+	margin-left:5px;}
+
+
+	.footermenu a{display:none;}
+	#footer form{display:none;}
+
+	.callcenter{text-align:center;
+						width:100%;
+						clear:both;}
+
+	.address{clear:both;
+					padding:15px 10px;
+					text-align:center;
+						width:100%;}
+
+	.warning{margin-left:10px;
+					text-align:center;
+						width:100%;}
+
+}
+
+
+
+	/*360(브라우저 가로폭)*/
+@media screen and (max-width:360px){
+		#header,#footer,#contents{width:100%;
+														overflow:hidden;}
+
+	.top,.load,.content h3,form > img{display:none;}
+
+	#part1 img{width:80px;}
+	.menu ul li,.left_b ul li{margin:5px 0;}
+
+	.content form{background:url(../images/loginBox_bg.gif) repeat-x;
+	border:3px solid #E5E5E5;
+	padding:10px 0;
+	text-align:center;}
+	input{border:3px solid #CCCCCC;
+			height:15px;
+			width:80px;
+			margin-right:5px;}
+	.login{width:50px;
+				margin-top:5px;}
+
+
+	.arrow1{color:#999999;
+				margin:10px 0;
+				}
+	.arrow1 span{color:#F76D1A;
+						font-weight:bold;}
+
+	.join{display:inline-block;}
+	.join > li{float:left;
+				margin-left:3px;
+				font-weight:bold;}
+
+	.arrow2{background:url(../images/login_bar.gif) no-repeat 0 5px/200px 1px;
+	padding-top:10px;
+}
+
+
+.footermenu a{display:none;}
+#footer form{display:none;}
+
+.br{display:block;}
+
+
+	}
+
+

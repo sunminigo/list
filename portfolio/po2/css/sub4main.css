@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(footer.css);
+
+
+.visual{margin-top:20px;
+			width:2800px;}
+.visual ul{width:1400px;
+				height:200px;
+				overflow:hidden;}
+.visual li{float:left;}
+.visual img{width:1500px;
+					}
+
+.under{background:url(../images/subbg.gif) no-repeat;}
+
+
+.left{width:308px;
+		float:left;}
+
+
+.left h2{background:url(../images/left_titlebg.gif) no-repeat ;
+				height:102px;
+				color:#fff;
+				text-align:center;
+				padding-top:50px;
+				font-size:35px;
+				}
+
+.leftmenu{text-align:center;
+				background-color:black;
+				height:150px;
+				padding-top:45px;}
+.leftmenu li{margin-top:30px;}
+.leftmenu li:first-child{margin-top:0;}
+.leftmenu li:hover{margin-left:5px;}
+
+
+.map{}
+.iframe{}
+
+.sns{padding:35px  0 0 0;
+		background-color:black;
+		height:100px;}
+.sns li{float:left;
+			margin-left:35px;
+			}
+
+
+
+
+
+.right{width:1050px;
+			float:left;
+			margin-left:40px;}
+
+.img{margin:20px 0;}
+
+
+.contents, .schedule{padding:30px 0;
+								line-height:1.6;
+								background-color:#ebebeb;
+								margin:0 0 40px 0;
+								text-align:center;}
+.contents h3,.schedule h3{font-size:40px;
+										padding:10px 0;
+										}
+.contents p,.schedule p{font-size:20px;
+									padding:20px 0;
+									}
+
+
+table{border-collapse:collapse;
+		height:500px;
+		width:1050px;}
+caption{display:none;}
+thead{background-color:#d5d5d5;}
+table,thead th, tbody th, tbody td{border-top:1px solid #d5d5d5;
+						border-bottom:1px solid #d5d5d5;
+						border:1px solid #d5d5d5;}
+
+th{font-size:20px;
+	font-weight:bold;}
+td{font-size:15px;}
+th, td{padding:10px;
+			line-height:1.6;}
+
+
+
+
+.photo{width:1050;
+			margin:50px auto;
+			border:10px solid black;
+			overflow:hidden;
+			padding:5px;}
+.thumbs{float:left;
+			width:90px;}
+.thumbs img{width:100px;
+					height:100px;
+					padding:5px;}
+.thumbs img:hover{margin-left:5px;}
+#lageimg{float:right;
+				margin-left:3px;
+				}
+
+#lageimg img{width:900px;
+						height:765px;}

@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+<meta name="robots" content="all" />
+<meta name="keywords" content=" " />
+<meta name="description" content=" "/>
+<meta name="author" content=" "/>
+   <title>주혜민 010.8895.0731 </title>
+<link rel="stylesheet" type="text/css" href="css/sub1main.css"/>
+<link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css' />
+
+<!-- 스크립트cdn파일 -->
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+<!-- gnb -->
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/gnb.js"></script>
+
+<!-- icon -->
+
+<!-- visual -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		/*이미지가 이동 왼쪽*/
+		/*버튼도 같이 선택*/
+		/*setinterval과 clearinterval*/
+		function changeItem(num){
+			$("#navi a.on").removeClass("on");
+			$("#navi a").eq(num).addClass("on");
+			$("#visual").stop().animate({left:-(num*1400)+"px"},600,"easeOutBounce")
+		}
+		function next(){
+			var temp=$("#navi a.on").index()+1;
+			if(temp > $("#navi a").length-1){
+				temp=0;//번호체크
+			}
+			//alert(temp);하면 번호가 어떻게 돌아가는지 확인할 수 있다.
+			changeItem(temp);
+		}
+
+		var sid;
+		$(document).ready(function(){
+			sid=setInterval(next,3000);
+			$("#navi a").mouseenter(function(){
+				clearInterval(sid);
+				changeItem($(this).index());
+				
+			})
+			$("#navi a").mouseleave(function(){
+				sid=setInterval(next,3000);
+			})
+		})
+
+	</script>
+
+
+</head>
+<body>
+<div id="skipNavi">
+	<ul>
+		<li><a href=".gnbmenu">주메뉴 바로가기</a></li>
+		<li><a href="#container">본문 바로가기</a></li>
+	</ul>
+</div>
+
+
+<div id="wrapper">
+
+	<div id="header">
+		<h1><a href="index.html"><img src="images/logo.gif"  alt="청라건국 동물병원"/></a></h1>
+		<div class="usermenu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><span>｜</span></li>
+				<li><a href="#">SITEMAP</a></li>
+				<li><span>｜</span></li>
+				<li><a href="#" target="_blank" title="영문(english)페이지로 이동-새창열림">ENGLISH</a></li>
+			</ul>
+		</div>
+
+
+	<div id="gnbWrap">
+			<ul id="gnb">
+				<li>
+				<a href="1.html">병원소개</a>
+				<div class="sGnbArea">
+						<ul class="submenu1">
+							<li><a href="#">병원연혁</a></li>
+							<li><a href="#">의료진소개</a></li>
+							<li><a href="#">진료시간</a></li>
+							<li><a href="#">오시는길</a></li>
+						</ul>
+				</div>
+				</li>
+				<li>
+					<a href="2.html">전문진료</a>
+					<div class="sGnbArea">
+						<ul class="submenu2">
+							<li><a href="#">정형외과클리닉</a></li>
+							<li><a href="#">일반클리닉</a></li>
+						</ul>
+						</div>
+				</li>
+				<li>
+					<a href="3.html">질병정보</a>
+					<div class="sGnbArea">
+						<ul class="submenu3">
+							<li><a href="#">질병정보</a></li>
+							<li><a href="#">가내처치법</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="4.html">미용/호텔</a>
+					<div class="sGnbArea">
+						<ul class="submenu4">
+							<li><a href="#">애견미용안내</a></li>
+							<li><a href="#">미용사진</a></li>
+							<li><a href="#">호텔유치원</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="5.html">커뮤니티</a>
+					<div class="sGnbArea">
+						<ul class="submenu5">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">질문과답변</a></li>
+							<li><a href="#">진료사진</a></li>
+							<li><a href="#">진료후기</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+
+
+	<div id="container">
+		<div id="visual">
+			<ul>
+				<li><img src="images/sub1_visual01.gif"  alt="병원소개 행복으로 치료하는 청라건국 동물병원을 소개합니다"/></li>
+				<li><img src="images/sub1_visual02.gif"  alt="병원소개 행복으로 치료하는 청라건국 동물병원을 소개합니다"/></li>
+			</ul>
+		</div>
+		<div id="navi">
+			<a href="#" class="on"><span>1</span></a>
+			<a href="#"><span>2</span></a>
+		</div>
+
+		<div class="under">
+			
+			<div class="left">
+				<h2>병원소개</h2>
+				<div class="leftmenu">
+					<ul>
+						<li>
+							<a href="#"><img src="images/sub1left_list01.gif"  alt="병원소개"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/sub1left_list02.gif"  alt="의료진소개"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/sub1left_list03.gif"  alt="진료시간"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/sub1left_list04.gif"  alt="오시는길"/></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="map">
+					<iframe src="https://www.google.com/maps/d/embed?mid=z8tB9AwKbi1Q.kLMXikwGQibw" width="305" height="305"></iframe>
+					<p class="skip">인천 서구 중봉대로586번길 22</p>
+				</div>
+
+				<div class="sns">
+					<ul>
+						<li><a href="#"><img src="images/left_icon01.gif"  alt="트위터"/></a></li>
+						<li><a href="#"><img src="images/left_icon02.gif"  alt="카카오톡"/></a></li>
+						<li><a href="#"><img src="images/left_icon03.gif"  alt="페이스북"/></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="right">
+				<div class="txt">
+					<strong>병원소개</strong>
+					<span>청라건국 동물병원은 끊임없는 연구와 사랑으로 언제나 반려동물만을 생각합니다.<br/>
+					의료서비스 뿐만 아니라 반려동물의 삶의 질이 높아질 수 있는 방안을 연구하고 있습니다.</span>
+				</div>
+				
+				<img src="images/right_img.gif"  alt=""/>
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+<div id="footerwrap">
+		<div id="footer">
+		<p class="footerlogo"><img src="images/footerlogo.gif"  alt=""/></p>
+		<address>
+			인천 서구 연희동 801-1 엑슬루타워 B동 140-141호 사업자번호 137-20-53694 대표 노병국 <span>TEL 032)563-0094</span><br/>
+			COPYRIGHT(C) 청라건국동물병원. ALL RIGHTS RESERVED
+		</address>
+	</div>
+
+</div>
+
+</body>
+</html>
